@@ -3,8 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="UWEB - Planes y precios de desarrollo web. Elige el plan perfecto para tu negocio.">
-    <title>Precios - UWEB</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Precios de desarrollo web UWEB - Planes desde S/999. OnePage, Multipage y proyectos personalizados. Cotización gratuita, pagos flexibles y garantía de calidad en Perú.">
+    <meta name="keywords" content="precios desarrollo web, costo sitio web, cotización web Perú, planes desarrollo web, precio página web, tarifas programación web">
+    <meta name="author" content="UWEB - Desarrollo Web Profesional">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Spanish">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Precios - UWEB | Planes de Desarrollo Web desde S/999">
+    <meta property="og:description" content="Planes transparentes de desarrollo web: OnePage desde S/999, Multipage desde S/2,699. Cotización gratuita y pagos flexibles.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://uweb.com/precios.html">
+    <meta property="og:image" content="https://uweb.com/assets/images/og-precios.jpg">
+    <meta property="og:image:alt" content="Planes y precios UWEB">
+    <meta property="og:site_name" content="UWEB">
+    <meta property="og:locale" content="es_PE">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Precios - UWEB | Desarrollo Web desde S/999">
+    <meta name="twitter:description" content="Planes transparentes de desarrollo web con pagos flexibles y garantía de calidad.">
+    <meta name="twitter:image" content="https://uweb.com/assets/images/og-precios.jpg">
+    
+    <title>Precios - UWEB | Planes de Desarrollo Web desde S/999</title>
+    <link rel="canonical" href="https://uweb.com/precios.html">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="preload" href="script.js" as="script">
+    
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -19,16 +51,16 @@
                     <a href="index.html" class="nav__link">Inicio</a>
                 </li>
                 <li class="nav__item">
-                    <a href="index.html#servicios" class="nav__link">Servicios</a>
+                    <a href="servicios.html" class="nav__link">Servicios</a>
+                </li>
+                <li class="nav__item">
+                    <a href="portafolio.html" class="nav__link">Portafolio</a>
                 </li>
                 <li class="nav__item">
                     <a href="precios.html" class="nav__link nav__link--active">Precios</a>
                 </li>
                 <li class="nav__item">
-                    <a href="index.html#nosotros" class="nav__link">Nosotros</a>
-                </li>
-                <li class="nav__item">
-                    <a href="index.html#contacto" class="nav__link">Contacto</a>
+                    <a href="contacto.html" class="nav__link">Contacto</a>
                 </li>
             </ul>
             <div class="nav__toggle" id="nav-toggle">
@@ -58,21 +90,31 @@
             <div class="currency-selector">
                 <label for="currency-select" class="currency-selector__label">Moneda:</label>
                 <select id="currency-select" class="currency-selector__select">
+                    <option value="PEN" selected>PEN (S/)</option>
                     <option value="USD">USD ($)</option>
-                    <option value="PEN">PEN (S/)</option>
                 </select>
                 <div class="currency-selector__rate" id="exchange-rate">
                     <span class="rate-loading">Cargando tasa de cambio...</span>
                 </div>
             </div>
+            
+            <!-- Exchange Rate Info -->
+            <div style="text-align: center; margin-bottom: 1.5rem;">
+                <p style="margin: 0; color: var(--text-light); font-size: 0.8rem; opacity: 0.8;">
+                    Tasa actualizada automáticamente • 
+                    <a href="https://www.google.com/finance/quote/USD-PEN" target="_blank" rel="noopener" style="color: var(--text-light); text-decoration: none; border-bottom: 1px dotted var(--text-light);">
+                        Verificar en Google Finance
+                    </a>
+                </p>
+            </div>
             <div class="pricing__grid">
-                <!-- Plan Económico -->
+                <!-- Plan OnePage/Landing -->
                 <div class="pricing-card">
                     <div class="pricing-card__header">
-                        <h3 class="pricing-card__name">Económico</h3>
+                        <h3 class="pricing-card__name">OnePage / Landing</h3>
                         <div class="pricing-card__price">
-                            <span class="pricing-card__currency">$</span>
-                            <span class="pricing-card__amount" data-price-usd="499">499</span>
+                            <span class="pricing-card__currency">S/</span>
+                            <span class="pricing-card__amount" data-price-pen="999">999</span>
                             <span class="pricing-card__period">/proyecto</span>
                         </div>
                         <p class="pricing-card__description">Perfecto para pequeñas empresas y proyectos personales</p>
@@ -85,7 +127,7 @@
                             </li>
                             <li class="pricing-card__feature">
                                 <span class="feature-icon">✓</span>
-                                <span>Hasta 5 páginas</span>
+                                <span>Página única optimizada</span>
                             </li>
                             <li class="pricing-card__feature">
                                 <span class="feature-icon">✓</span>
@@ -101,29 +143,29 @@
                             </li>
                             <li class="pricing-card__feature">
                                 <span class="feature-icon">✓</span>
-                                <span>Certificado SSL incluido</span>
+                                <span>Pago único</span>
                             </li>
                             <li class="pricing-card__feature">
                                 <span class="feature-icon">✓</span>
-                                <span>1 mes de soporte gratuito</span>
+                                <span>Entrega en 7 días</span>
                             </li>
                             <li class="pricing-card__feature">
                                 <span class="feature-icon">✓</span>
-                                <span>Entrega en 2-3 semanas</span>
+                                <span>3 días de revisiones básicas</span>
                             </li>
                         </ul>
                         <a href="index.html#contacto" class="btn btn--outline btn--full">Elegir Plan</a>
                     </div>
                 </div>
 
-                <!-- Plan Básico -->
+                <!-- Plan Multipage -->
                 <div class="pricing-card pricing-card--featured">
                     <div class="pricing-card__badge">Más Popular</div>
                     <div class="pricing-card__header">
-                        <h3 class="pricing-card__name">Básico</h3>
+                        <h3 class="pricing-card__name">Multipage</h3>
                         <div class="pricing-card__price">
-                            <span class="pricing-card__currency">$</span>
-                            <span class="pricing-card__amount" data-price-usd="999">999</span>
+                            <span class="pricing-card__currency">S/</span>
+                            <span class="pricing-card__amount" data-price-pen="2699">2,699</span>
                             <span class="pricing-card__period">/proyecto</span>
                         </div>
                         <p class="pricing-card__description">Ideal para empresas en crecimiento</p>
@@ -132,19 +174,15 @@
                         <ul class="pricing-card__features">
                             <li class="pricing-card__feature">
                                 <span class="feature-icon">✓</span>
-                                <span>Todo lo del plan Económico</span>
+                                <span>De 5 a 7 páginas</span>
                             </li>
                             <li class="pricing-card__feature">
                                 <span class="feature-icon">✓</span>
-                                <span>Hasta 10 páginas</span>
+                                <span>Diseño web responsivo</span>
                             </li>
                             <li class="pricing-card__feature">
                                 <span class="feature-icon">✓</span>
-                                <span>Diseño personalizado avanzado</span>
-                            </li>
-                            <li class="pricing-card__feature">
-                                <span class="feature-icon">✓</span>
-                                <span>Optimización SEO avanzada</span>
+                                <span>CMS básico incluido</span>
                             </li>
                             <li class="pricing-card__feature">
                                 <span class="feature-icon">✓</span>
@@ -152,32 +190,36 @@
                             </li>
                             <li class="pricing-card__feature">
                                 <span class="feature-icon">✓</span>
+                                <span>Optimización SEO avanzada</span>
+                            </li>
+                            <li class="pricing-card__feature">
+                                <span class="feature-icon">✓</span>
                                 <span>Integración con Google Analytics</span>
                             </li>
                             <li class="pricing-card__feature">
                                 <span class="feature-icon">✓</span>
-                                <span>Blog integrado</span>
+                                <span>Formularios de contacto</span>
                             </li>
                             <li class="pricing-card__feature">
                                 <span class="feature-icon">✓</span>
-                                <span>3 meses de soporte gratuito</span>
+                                <span>Entrega en 14 días</span>
                             </li>
                             <li class="pricing-card__feature">
                                 <span class="feature-icon">✓</span>
-                                <span>Entrega en 3-4 semanas</span>
+                                <span>7 días mejoras incluidas</span>
                             </li>
                         </ul>
                         <a href="index.html#contacto" class="btn btn--primary btn--full">Elegir Plan</a>
                     </div>
                 </div>
 
-                <!-- Plan Corporativo -->
+                <!-- Plan Personalizado -->
                 <div class="pricing-card">
                     <div class="pricing-card__header">
-                        <h3 class="pricing-card__name">Corporativo</h3>
+                        <h3 class="pricing-card__name">Personalizado</h3>
                         <div class="pricing-card__price">
-                            <span class="pricing-card__currency">$</span>
-                            <span class="pricing-card__amount" data-price-usd="2499">2,499</span>
+                            <span class="pricing-card__currency">S/</span>
+                            <span class="pricing-card__amount" data-price-pen="9000">9,000+</span>
                             <span class="pricing-card__period">/proyecto</span>
                         </div>
                         <p class="pricing-card__description">Solución completa para grandes empresas</p>
@@ -186,23 +228,23 @@
                         <ul class="pricing-card__features">
                             <li class="pricing-card__feature">
                                 <span class="feature-icon">✓</span>
-                                <span>Todo lo del plan Básico</span>
+                                <span>Web institucionales/corporativas</span>
                             </li>
                             <li class="pricing-card__feature">
                                 <span class="feature-icon">✓</span>
-                                <span>Páginas ilimitadas</span>
+                                <span>Marketplace completo</span>
                             </li>
                             <li class="pricing-card__feature">
                                 <span class="feature-icon">✓</span>
-                                <span>Aplicación web personalizada</span>
+                                <span>Aplicaciones web avanzadas</span>
                             </li>
                             <li class="pricing-card__feature">
                                 <span class="feature-icon">✓</span>
-                                <span>E-commerce completo</span>
+                                <span>Integraciones n8n</span>
                             </li>
                             <li class="pricing-card__feature">
                                 <span class="feature-icon">✓</span>
-                                <span>Integración con sistemas externos</span>
+                                <span>Desarrollo a la medida</span>
                             </li>
                             <li class="pricing-card__feature">
                                 <span class="feature-icon">✓</span>
@@ -210,26 +252,22 @@
                             </li>
                             <li class="pricing-card__feature">
                                 <span class="feature-icon">✓</span>
-                                <span>Optimización de rendimiento</span>
+                                <span>MVP o demo funcional</span>
                             </li>
                             <li class="pricing-card__feature">
                                 <span class="feature-icon">✓</span>
-                                <span>Capacitación del equipo</span>
+                                <span>Consultoría estratégica</span>
                             </li>
                             <li class="pricing-card__feature">
                                 <span class="feature-icon">✓</span>
-                                <span>6 meses de soporte gratuito</span>
+                                <span>Soporte especializado</span>
                             </li>
                             <li class="pricing-card__feature">
                                 <span class="feature-icon">✓</span>
-                                <span>Entrega en 6-8 semanas</span>
-                            </li>
-                            <li class="pricing-card__feature">
-                                <span class="feature-icon">✓</span>
-                                <span>Consultoría estratégica incluida</span>
+                                <span>Cotización personalizada</span>
                             </li>
                         </ul>
-                        <a href="index.html#contacto" class="btn btn--outline btn--full">Elegir Plan</a>
+                        <a href="index.html#contacto" class="btn btn--outline btn--full">Solicitar Cotización</a>
                     </div>
                 </div>
             </div>
@@ -239,22 +277,68 @@
                 <h2 class="section__title">Preguntas Frecuentes</h2>
                 <div class="faq__grid">
                     <div class="faq__item">
-                        <h3 class="faq__question">¿Puedo cambiar de plan después?</h3>
-                        <p class="faq__answer">Sí, puedes actualizar tu plan en cualquier momento. Te ayudaremos a migrar sin problemas.</p>
-                    </div>
-                    <div class="faq__item">
-                        <h3 class="faq__question">¿Qué métodos de pago aceptan?</h3>
-                        <p class="faq__answer">Aceptamos transferencia bancaria, tarjeta de crédito y PayPal. También ofrecemos planes de pago.</p>
-                    </div>
-                    <div class="faq__item">
                         <h3 class="faq__question">¿Incluyen hosting y dominio?</h3>
-                        <p class="faq__answer">El hosting y dominio no están incluidos en el precio base, pero podemos ayudarte a configurarlos.</p>
+                        <p class="faq__answer">No, nuestros planes no incluyen dominio ni hosting. Se cotiza según el requerimiento del cliente (hosting tradicional o VPS).</p>
                     </div>
                     <div class="faq__item">
-                        <h3 class="faq__question">¿Ofrecen mantenimiento continuo?</h3>
-                        <p class="faq__answer">Sí, ofrecemos planes de mantenimiento mensuales después del periodo de soporte gratuito.</p>
+                        <h3 class="faq__question">¿Cómo son los pagos?</h3>
+                        <p class="faq__answer">30% inicial al iniciar, 20% al entregar la primera versión preliminar, y 50% restante al desplegar el proyecto.</p>
+                    </div>
+                    <div class="faq__item">
+                        <h3 class="faq__question">¿Quién paga el mantenimiento?</h3>
+                        <p class="faq__answer">El costo operativo y mantenimiento lo paga el cliente. Ofrecemos soporte especializado por separado.</p>
+                    </div>
+                    <div class="faq__item">
+                        <h3 class="faq__question">¿Qué incluye el proceso de desarrollo?</h3>
+                        <p class="faq__answer">Nuestro proceso incluye: Estudio, Diseño, Construcción y Despliegue. Cada etapa está planificada para garantizar calidad.</p>
+                    </div>
+                    <div class="faq__item">
+                        <h3 class="faq__question">¿Puedo solicitar cambios durante el desarrollo?</h3>
+                        <p class="faq__answer">Sí, incluimos días de revisiones básicas en cada plan. Cambios adicionales se cotizan por separado.</p>
+                    </div>
+                    <div class="faq__item">
+                        <h3 class="faq__question">¿Qué pasa si necesito algo más específico?</h3>
+                        <p class="faq__answer">Para proyectos personalizados (marketplace, web apps, n8n), creamos una cotización específica según tus requerimientos.</p>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Info Section -->
+    <section style="padding: 60px 0; background: var(--bg-light);">
+        <div class="container">
+            <h2 class="section__title">Modalidad de Pagos</h2>
+            <div class="services__grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); margin-top: 2rem;">
+                <div class="service__card">
+                    <div class="service__icon">💳</div>
+                    <h3 class="service__title">30% Inicial</h3>
+                    <p class="service__description">
+                        Al iniciar el proyecto para comenzar con el desarrollo
+                    </p>
+                </div>
+                <div class="service__card">
+                    <div class="service__icon">🔄</div>
+                    <h3 class="service__title">20% Intermedio</h3>
+                    <p class="service__description">
+                        Al entregar la primera versión preliminar para revisión
+                    </p>
+                </div>
+                <div class="service__card">
+                    <div class="service__icon">🚀</div>
+                    <h3 class="service__title">50% Final</h3>
+                    <p class="service__description">
+                        Al desplegar y lanzar el proyecto al público
+                    </p>
+                </div>
+            </div>
+            
+            <div style="background: white; padding: 2rem; border-radius: 12px; margin-top: 3rem; text-align: center;">
+                <h3 style="color: var(--text-color); margin-bottom: 1rem;">⚠️ Importante</h3>
+                <p style="color: var(--text-light); margin-bottom: 0;">
+                    <strong>Hosting y Dominio NO incluidos.</strong> Se cotiza según requerimiento del cliente (hosting tradicional o VPS). 
+                    El costo operativo y mantenimiento lo paga el cliente.
+                </p>
             </div>
         </div>
     </section>
@@ -286,17 +370,26 @@
                     <h4 class="footer__subtitle">Enlaces</h4>
                     <ul class="footer__links">
                         <li><a href="index.html">Inicio</a></li>
-                        <li><a href="index.html#servicios">Servicios</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="portafolio.html">Portafolio</a></li>
                         <li><a href="precios.html">Precios</a></li>
-                        <li><a href="index.html#nosotros">Nosotros</a></li>
-                        <li><a href="index.html#contacto">Contacto</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer__section">
+                    <h4 class="footer__subtitle">Políticas</h4>
+                    <ul class="footer__links">
+                        <li><a href="politicas/privacidad.html">Política de Privacidad</a></li>
+                        <li><a href="politicas/terminos.html">Términos de Servicio</a></li>
+                        <li><a href="politicas/devoluciones.html">Política de Devoluciones</a></li>
                     </ul>
                 </div>
                 <div class="footer__section">
                     <h4 class="footer__subtitle">Contacto</h4>
                     <ul class="footer__contact">
                         <li>📧 info@uweb.com</li>
-                        <li>📱 +34 123 456 789</li>
+                        <li>📱 +51 987 654 321</li>
+                        <li>📍 Barranca, Lima, Perú</li>
                     </ul>
                 </div>
             </div>
@@ -305,6 +398,103 @@
             </div>
         </div>
     </footer>
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Servicios de Desarrollo Web UWEB",
+        "description": "Planes de desarrollo web profesional con diferentes opciones según las necesidades del cliente",
+        "brand": {
+            "@type": "Brand",
+            "name": "UWEB"
+        },
+        "offers": [
+            {
+                "@type": "Offer",
+                "name": "Plan OnePage / Landing",
+                "description": "Página única optimizada para pequeñas empresas y proyectos personales",
+                "price": "999",
+                "priceCurrency": "PEN",
+                "availability": "https://schema.org/InStock",
+                "validFrom": "2024-01-01",
+                "priceValidUntil": "2024-12-31",
+                "seller": {
+                    "@type": "Organization",
+                    "name": "UWEB"
+                },
+                "itemCondition": "https://schema.org/NewCondition",
+                "category": "Web Development Service"
+            },
+            {
+                "@type": "Offer",
+                "name": "Plan Multipage",
+                "description": "Sitio web corporativo de 5-7 páginas con CMS y panel administrativo",
+                "price": "2699",
+                "priceCurrency": "PEN",
+                "availability": "https://schema.org/InStock",
+                "validFrom": "2024-01-01",
+                "priceValidUntil": "2024-12-31",
+                "seller": {
+                    "@type": "Organization",
+                    "name": "UWEB"
+                },
+                "itemCondition": "https://schema.org/NewCondition",
+                "category": "Web Development Service"
+            },
+            {
+                "@type": "Offer",
+                "name": "Plan Personalizado",
+                "description": "Solución completa para grandes empresas con desarrollo a medida",
+                "price": "9000",
+                "priceCurrency": "PEN",
+                "availability": "https://schema.org/InStock",
+                "validFrom": "2024-01-01",
+                "priceValidUntil": "2024-12-31",
+                "seller": {
+                    "@type": "Organization",
+                    "name": "UWEB"
+                },
+                "itemCondition": "https://schema.org/NewCondition",
+                "category": "Web Development Service"
+            }
+        ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "¿Incluyen hosting y dominio?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No, nuestros planes no incluyen dominio ni hosting. Se cotiza según el requerimiento del cliente (hosting tradicional o VPS)."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Cómo son los pagos?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "30% inicial al iniciar, 20% al entregar la primera versión preliminar, y 50% restante al desplegar el proyecto."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Quién paga el mantenimiento?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "El costo operativo y mantenimiento lo paga el cliente. Ofrecemos soporte especializado por separado."
+                }
+            }
+        ]
+    }
+    </script>
 
     <script src="script.js"></script>
 </body>

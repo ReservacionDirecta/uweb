@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Contacta con UWEB para tu proyecto de desarrollo web. Formulario de contacto, información de ubicación en Barranca, Lima y horarios de atención. Respuesta garantizada en 24 horas.">
+    <meta name="keywords" content="contacto UWEB, desarrollo web Perú, cotización web, consulta desarrollo web, Barranca Lima, contacto programador web">
+    <meta name="author" content="UWEB - Desarrollo Web Profesional">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Spanish">
+    <meta name="geo.region" content="PE-LIM">
+    <meta name="geo.placename" content="Barranca, Lima, Perú">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Contacto - UWEB | Desarrollo Web Profesional">
+    <meta property="og:description" content="¿Tienes un proyecto en mente? Contáctanos para una consulta gratuita. Desarrollo web profesional en Perú con garantía de calidad.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://uweb.com/contacto.html">
+    <meta property="og:image" content="https://uweb.com/assets/images/og-contacto.jpg">
+    <meta property="og:image:alt" content="Formulario de contacto UWEB">
+    <meta property="og:site_name" content="UWEB">
+    <meta property="og:locale" content="es_PE">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Contacto - UWEB | Desarrollo Web Profesional">
+    <meta name="twitter:description" content="¿Tienes un proyecto en mente? Contáctanos para una consulta gratuita. Desarrollo web profesional en Perú.">
+    <meta name="twitter:image" content="https://uweb.com/assets/images/og-contacto.jpg">
+    
+    <title>Contacto - UWEB | Desarrollo Web Profesional en Perú</title>
+    <link rel="canonical" href="https://uweb.com/contacto.html">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="preload" href="script.js" as="script">
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//maps.googleapis.com">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <a href="index.html"><h1>UWEB</h1></a>
+            </div>
+            <ul class="nav__menu" id="nav-menu">
+                <li class="nav__item">
+                    <a href="index.html" class="nav__link">Inicio</a>
+                </li>
+                <li class="nav__item">
+                    <a href="servicios.html" class="nav__link">Servicios</a>
+                </li>
+                <li class="nav__item">
+                    <a href="portafolio.html" class="nav__link">Portafolio</a>
+                </li>
+                <li class="nav__item">
+                    <a href="precios.html" class="nav__link">Precios</a>
+                </li>
+                <li class="nav__item">
+                    <a href="contacto.html" class="nav__link nav__link--active">Contacto</a>
+                </li>
+            </ul>
+            <div class="nav__toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contact Hero -->
+    <section class="contact-hero">
+        <div class="container">
+            <div class="contact-hero__content">
+                <h1 class="contact-hero__title">Contacto</h1>
+                <p class="contact-hero__description">
+                    ¿Tienes un proyecto en mente? ¡Hablemos! Estamos aquí para ayudarte a hacer realidad tus ideas digitales.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="container">
+            <h2 class="section__title">Envíanos tu consulta</h2>
+            <p class="section__subtitle">Te responderemos a la brevedad</p>
+            
+            <div class="contact-grid">
+                <!-- Contact Information -->
+                <div class="contact-info-card">
+                    <h3 class="section__title" style="font-size: 1.5rem; margin-bottom: 2rem;">Información de Contacto</h3>
+                    
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon">
+                            📧
+                        </div>
+                        <div class="contact-info-text">
+                            <h4>Email</h4>
+                            <p>info@uweb.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon">
+                            📱
+                        </div>
+                        <div class="contact-info-text">
+                            <h4>Teléfono</h4>
+                            <p>+51 987 654 321</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon">
+                            📍
+                        </div>
+                        <div class="contact-info-text">
+                            <h4>Dirección</h4>
+                            <p>Barranca, Lima, Perú<br>Provincia de Barranca</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon">
+                            🕒
+                        </div>
+                        <div class="contact-info-text">
+                            <h4>Horario de Atención</h4>
+                            <p>Lunes a Viernes: 9:00 - 18:00 (PET)<br>Sábados: 10:00 - 14:00 (PET)</p>
+                            <small style="color: var(--text-light); font-size: 0.85rem;">Zona horaria: UTC-5 (Perú)</small>
+                            <div class="local-time" style="margin-top: 0.5rem; padding: 0.5rem; background: var(--bg-light); border-radius: 6px;">
+                                Cargando hora local...
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Mapa de ubicación -->
+                    <div class="map-container">
+                        <h4>🗺️ Ubicación</h4>
+                        <div class="map-embed">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62418.89394989!2d-77.76!3d-10.75!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9148c0b7e5c8b5b5%3A0x8b5b5b5b5b5b5b5b!2sBarranca%2C%20Peru!5e0!3m2!1sen!2spe!4v1699999999999!5m2!1sen!2spe" 
+                                width="100%" 
+                                height="200" 
+                                frameborder="0" 
+                                scrolling="no" 
+                                marginheight="0" 
+                                marginwidth="0"
+                                title="Ubicación de UWEB en Barranca, Lima, Perú"
+                                loading="lazy"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <p class="map-note">📍 Barranca, Lima, Perú</p>
+                        <div style="margin-top: 0.5rem;">
+                            <a href="https://maps.app.goo.gl/dyazULGEpCEp6um89" target="_blank" rel="noopener" style="color: var(--primary-color); text-decoration: none; font-size: 0.9rem;">
+                                📱 Ver en Google Maps →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <form class="contact__form" id="contact-form">
+                <div class="form__group">
+                    <label for="name" class="form__label">Nombre *</label>
+                    <input type="text" id="name" name="name" class="form__input" required>
+                    <div class="field-error-container"></div>
+                </div>
+                <div class="form__group">
+                    <label for="email" class="form__label">Email *</label>
+                    <input type="email" id="email" name="email" class="form__input" required>
+                    <div class="field-error-container"></div>
+                </div>
+                <div class="form__group">
+                    <label for="phone" class="form__label">Teléfono</label>
+                    <input type="tel" id="phone" name="phone" class="form__input" placeholder="+51 987 654 321">
+                    <div class="field-error-container"></div>
+                </div>
+                <div class="form__group">
+                    <label for="service-type" class="form__label">Tipo de Servicio *</label>
+                    <select id="service-type" name="serviceType" class="form__select" required>
+                        <option value="">Selecciona un servicio</option>
+                        <option value="estudio">Estudio - Análisis y estrategia</option>
+                        <option value="diseno">Diseño - UI/UX y prototipado</option>
+                        <option value="construccion">Construcción - Desarrollo web</option>
+                        <option value="despliegue">Despliegue - Lanzamiento y hosting</option>
+                        <option value="completo">Proyecto completo (4 etapas)</option>
+                        <option value="other">Otro</option>
+                    </select>
+                    <div class="field-error-container"></div>
+                </div>
+                <div class="form__group">
+                    <label for="message" class="form__label">Mensaje *</label>
+                    <textarea id="message" name="message" class="form__textarea" rows="5" required placeholder="Cuéntanos sobre tu proyecto..."></textarea>
+                    <div class="field-error-container"></div>
+                </div>
+                <div class="form__status" id="form-status"></div>
+                <button type="submit" class="btn btn--primary btn--full" id="submit-btn">
+                    <span class="btn-text">Enviar Mensaje</span>
+                    <span class="btn-loading" style="display: none;">
+                        <span class="spinner"></span>
+                        Enviando...
+                    </span>
+                </button>
+            </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="contact-faq">
+        <div class="container">
+            <h2 class="section__title">Preguntas Frecuentes</h2>
+            <p class="section__subtitle">Resolvemos tus dudas más comunes</p>
+            
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <button class="faq-question" type="button" aria-expanded="false">
+                        <span>¿Cuánto tiempo toma desarrollar un sitio web?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>El tiempo de desarrollo varía según la complejidad del proyecto. Un sitio web básico puede tomar 2-4 semanas, mientras que proyectos más complejos como e-commerce pueden requerir 6-12 semanas.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" type="button" aria-expanded="false">
+                        <span>¿Ofrecen mantenimiento después del lanzamiento?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sí, ofrecemos planes de mantenimiento que incluyen actualizaciones de seguridad, copias de seguridad, soporte técnico y actualizaciones de contenido según tus necesidades.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" type="button" aria-expanded="false">
+                        <span>¿Qué información necesitan para empezar?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Necesitamos conocer tus objetivos, público objetivo, funcionalidades deseadas, referencias visuales y cualquier contenido existente. También es útil saber tu presupuesto y timeline.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" type="button" aria-expanded="false">
+                        <span>¿Trabajan con clientes internacionales?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutamente. Trabajamos con clientes de todo el mundo. Nos comunicamos en español e inglés y adaptamos nuestros horarios para facilitar la colaboración.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" type="button" aria-expanded="false">
+                        <span>¿Qué formas de pago aceptan?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Aceptamos transferencias bancarias, PayPal y tarjetas de crédito. Trabajamos con un sistema de pagos por hitos del proyecto para mayor transparencia.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" type="button" aria-expanded="false">
+                        <span>¿El sitio web será responsive?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Todos nuestros sitios web son completamente responsive y se adaptan perfectamente a móviles, tablets y desktop. También optimizamos la velocidad de carga.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <h3 class="footer__title">UWEB</h3>
+                    <p class="footer__description">
+                        Desarrollo web profesional. Soluciones digitales a medida.
+                    </p>
+                </div>
+                <div class="footer__section">
+                    <h4 class="footer__subtitle">Enlaces</h4>
+                    <ul class="footer__links">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="portafolio.html">Portafolio</a></li>
+                        <li><a href="precios.html">Precios</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer__section">
+                    <h4 class="footer__subtitle">Políticas</h4>
+                    <ul class="footer__links">
+                        <li><a href="politicas/privacidad.html">Política de Privacidad</a></li>
+                        <li><a href="politicas/terminos.html">Términos de Servicio</a></li>
+                        <li><a href="politicas/devoluciones.html">Política de Devoluciones</a></li>
+                    </ul>
+                </div>
+                <div class="footer__section">
+                    <h4 class="footer__subtitle">Contacto</h4>
+                    <ul class="footer__contact">
+                        <li>📧 info@uweb.com</li>
+                        <li>📱 +51 987 654 321</li>
+                        <li>📍 Barranca, Lima, Perú</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2024 UWEB. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ContactPage",
+        "name": "Contacto - UWEB",
+        "description": "Página de contacto de UWEB para consultas sobre desarrollo web profesional",
+        "url": "https://uweb.com/contacto.html",
+        "mainEntity": {
+            "@type": "Organization",
+            "name": "UWEB",
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+51-987-654-321",
+                "contactType": "customer service",
+                "email": "info@uweb.com",
+                "availableLanguage": ["Spanish", "English"],
+                "hoursAvailable": {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                    "opens": "09:00",
+                    "closes": "18:00"
+                }
+            },
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Barranca",
+                "addressLocality": "Lima",
+                "addressRegion": "Lima",
+                "addressCountry": "PE"
+            }
+        }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "¿Cuánto tiempo toma desarrollar un sitio web?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "El tiempo de desarrollo varía según la complejidad del proyecto. Un sitio web básico puede tomar 2-4 semanas, mientras que proyectos más complejos como e-commerce pueden requerir 6-12 semanas."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Ofrecen mantenimiento después del lanzamiento?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Sí, ofrecemos planes de mantenimiento que incluyen actualizaciones de seguridad, copias de seguridad, soporte técnico y actualizaciones de contenido según tus necesidades."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Qué información necesitan para empezar?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Necesitamos conocer tus objetivos, público objetivo, funcionalidades deseadas, referencias visuales y cualquier contenido existente. También es útil saber tu presupuesto y timeline."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>

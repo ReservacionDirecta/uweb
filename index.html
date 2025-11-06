@@ -3,8 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="UWEB - Servicios profesionales de desarrollo web. Creamos sitios web modernos y funcionales.">
-    <title>UWEB - Desarrollo Web Profesional</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="UWEB - Desarrollo web profesional en Perú. Creamos sitios web modernos, aplicaciones web y e-commerce. Servicios de calidad con garantía y soporte técnico.">
+    <meta name="keywords" content="desarrollo web, diseño web, páginas web, aplicaciones web, e-commerce, SEO, Perú, Lima, Barranca, programación web, sitios web profesionales">
+    <meta name="author" content="UWEB - Desarrollo Web Profesional">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Spanish">
+    <meta name="geo.region" content="PE-LIM">
+    <meta name="geo.placename" content="Barranca, Lima, Perú">
+    <meta name="geo.position" content="-10.75;-77.76">
+    <meta name="ICBM" content="-10.75, -77.76">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="UWEB - Desarrollo Web Profesional en Perú">
+    <meta property="og:description" content="Transformamos tus ideas en sitios web modernos y funcionales. Desarrollo web profesional con garantía de calidad y soporte técnico especializado.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://uweb.com/">
+    <meta property="og:image" content="https://uweb.com/assets/images/og-image.jpg">
+    <meta property="og:image:alt" content="UWEB - Desarrollo Web Profesional">
+    <meta property="og:site_name" content="UWEB">
+    <meta property="og:locale" content="es_PE">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="UWEB - Desarrollo Web Profesional en Perú">
+    <meta name="twitter:description" content="Transformamos tus ideas en sitios web modernos y funcionales. Desarrollo web profesional con garantía de calidad.">
+    <meta name="twitter:image" content="https://uweb.com/assets/images/og-image.jpg">
+    <meta name="twitter:image:alt" content="UWEB - Desarrollo Web Profesional">
+    
+    <!-- Additional SEO Meta Tags -->
+    <meta name="theme-color" content="#667eea">
+    <meta name="msapplication-TileColor" content="#667eea">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="UWEB">
+    
+    <title>UWEB - Desarrollo Web Profesional en Perú | Sitios Web Modernos</title>
+    <link rel="canonical" href="https://uweb.com/">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="preload" href="script.js" as="script">
+    <link rel="preload" href="assets/data/projects.json" as="fetch" crossorigin="anonymous">
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//api.exchangerate-api.com">
+    <link rel="dns-prefetch" href="//maps.googleapis.com">
+    
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -12,25 +60,28 @@
     <header class="header">
         <nav class="nav container">
             <div class="nav__logo">
-                <h1>UWEB</h1>
+                <a href="index.html"><h1>UWEB</h1></a>
             </div>
             <ul class="nav__menu" id="nav-menu">
                 <li class="nav__item">
-                    <a href="#inicio" class="nav__link">Inicio</a>
+                    <a href="#inicio" class="nav__link nav__link--active">Inicio</a>
                 </li>
                 <li class="nav__item">
-                    <a href="#servicios" class="nav__link">Servicios</a>
+                    <a href="servicios.html" class="nav__link">Servicios</a>
                 </li>
                 <li class="nav__item">
-                    <a href="#nosotros" class="nav__link">Nosotros</a>
+                    <a href="portafolio.html" class="nav__link">Portafolio</a>
                 </li>
                 <li class="nav__item">
                     <a href="precios.html" class="nav__link">Precios</a>
                 </li>
                 <li class="nav__item">
-                    <a href="#contacto" class="nav__link">Contacto</a>
+                    <a href="contacto.html" class="nav__link">Contacto</a>
                 </li>
             </ul>
+            <div class="nav__cta">
+                <a href="#contacto" class="btn btn--primary btn--small">Cotización Gratis</a>
+            </div>
             <div class="nav__toggle" id="nav-toggle">
                 <span></span>
                 <span></span>
@@ -43,14 +94,16 @@
     <section class="hero" id="inicio">
         <div class="hero__container container">
             <div class="hero__content">
-                <h1 class="hero__title">Desarrollo Web Profesional</h1>
+                <h1 class="hero__title">
+                    Tu Página Web que <span class="highlight">Aumenta Ventas 300%</span>
+                </h1>
                 <p class="hero__description">
-                    Transformamos tus ideas en sitios web modernos, funcionales y de alto rendimiento.
-                    Soluciones digitales a medida para tu negocio.
+                    Transformamos visitantes en clientes con sitios web diseñados para vender.
+                    <strong>Listo en 10 días.</strong> Inversión que se recupera con el primer cliente.
                 </p>
-                <div class="hero__buttons">
-                    <a href="#contacto" class="btn btn--primary">Contactar</a>
-                    <a href="#servicios" class="btn btn--secondary">Ver Servicios</a>
+                <div class="hero__cta">
+                    <a href="#contacto" class="btn btn--primary btn--cta">Cotización Gratis →</a>
+                    <p class="hero__cta-note">Sin compromiso • Respuesta en 2 horas</p>
                 </div>
             </div>
             <div class="hero__image">
@@ -63,88 +116,181 @@
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section class="services" id="servicios">
+    <!-- Results Section -->
+    <section class="results" id="resultados">
         <div class="container">
-            <h2 class="section__title">Nuestros Servicios</h2>
-            <p class="section__subtitle">Soluciones completas para tu presencia digital</p>
-            <div class="services__grid">
-                <div class="service__card">
-                    <div class="service__icon">🌐</div>
-                    <h3 class="service__title">Desarrollo Web</h3>
-                    <p class="service__description">
-                        Sitios web personalizados con las últimas tecnologías. Diseño responsivo y optimizado para todos los dispositivos.
-                    </p>
+            <h2 class="section__title">Resultados Que Hablan Por Sí Solos</h2>
+            <p class="section__subtitle">Nuestros clientes ya están viendo el impacto</p>
+            <div class="results__grid">
+                <div class="result__card">
+                    <div class="result__number">300%</div>
+                    <p class="result__description">Aumento promedio en ventas online</p>
                 </div>
-                <div class="service__card">
-                    <div class="service__icon">📱</div>
-                    <h3 class="service__title">Aplicaciones Web</h3>
-                    <p class="service__description">
-                        Aplicaciones web modernas y escalables. Soluciones interactivas para mejorar la experiencia de usuario.
-                    </p>
+                <div class="result__card">
+                    <div class="result__number">10 días</div>
+                    <p class="result__description">Tu web lista y vendiendo</p>
                 </div>
-                <div class="service__card">
-                    <div class="service__icon">⚡</div>
-                    <h3 class="service__title">Optimización</h3>
-                    <p class="service__description">
-                        Mejoramos el rendimiento de tu sitio web. Velocidad, SEO y experiencia de usuario optimizada.
-                    </p>
+                <div class="result__card">
+                    <div class="result__number">24/7</div>
+                    <p class="result__description">Tu vendedor digital trabajando</p>
                 </div>
-                <div class="service__card">
-                    <div class="service__icon">🎨</div>
-                    <h3 class="service__title">Diseño UI/UX</h3>
-                    <p class="service__description">
-                        Diseños atractivos e intuitivos. Interfaces que conectan con tus usuarios y aumentan la conversión.
-                    </p>
-                </div>
-                <div class="service__card">
-                    <div class="service__icon">🔧</div>
-                    <h3 class="service__title">Mantenimiento</h3>
-                    <p class="service__description">
-                        Soporte continuo y actualizaciones. Mantenemos tu sitio web seguro, actualizado y funcionando perfectamente.
-                    </p>
-                </div>
-                <div class="service__card">
-                    <div class="service__icon">🚀</div>
-                    <h3 class="service__title">Consultoría</h3>
-                    <p class="service__description">
-                        Asesoramiento técnico especializado. Te ayudamos a tomar las mejores decisiones para tu proyecto digital.
-                    </p>
+                <div class="result__card">
+                    <div class="result__number">70%</div>
+                    <p class="result__description">De tus clientes navegan desde móvil</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section class="about" id="nosotros">
+    <!-- Services Section -->
+    <section class="services" id="servicios">
         <div class="container">
-            <div class="about__content">
-                <div class="about__text">
-                    <h2 class="section__title">Sobre UWEB</h2>
-                    <p class="about__description">
-                        Somos un equipo de desarrolladores apasionados por crear soluciones web innovadoras.
-                        Con años de experiencia en el sector, nos especializamos en transformar ideas en
-                        productos digitales exitosos.
+            <h2 class="section__title">Cómo Transformamos Tu Negocio</h2>
+            <p class="section__subtitle">Metodología probada para generar más ventas</p>
+            <div class="services__grid">
+                <div class="service__card">
+                    <div class="service__icon">🔍</div>
+                    <h3 class="service__title">Estudio Estratégico</h3>
+                    <p class="service__description">
+                        Analizamos tu mercado y competencia para crear una estrategia que te posicione como líder y atraiga más clientes.
                     </p>
-                    <p class="about__description">
-                        Trabajamos con las últimas tecnologías y mejores prácticas del mercado para
-                        garantizar que tu proyecto sea de la más alta calidad. Cada proyecto es único
-                        y lo tratamos con dedicación y profesionalismo.
+                    <div class="service__benefit">→ Estrategia ganadora desde el día 1</div>
+                </div>
+                <div class="service__card">
+                    <div class="service__icon">🎨</div>
+                    <h3 class="service__title">Diseño Que Convierte</h3>
+                    <p class="service__description">
+                        Cada elemento visual está diseñado para guiar a tus visitantes hacia la compra. Psicología aplicada al diseño.
                     </p>
-                    <div class="about__stats">
-                        <div class="stat">
-                            <h3 class="stat__number">100+</h3>
-                            <p class="stat__label">Proyectos Completados</p>
-                        </div>
-                        <div class="stat">
-                            <h3 class="stat__number">50+</h3>
-                            <p class="stat__label">Clientes Satisfechos</p>
-                        </div>
-                        <div class="stat">
-                            <h3 class="stat__number">5+</h3>
-                            <p class="stat__label">Años de Experiencia</p>
-                        </div>
+                    <div class="service__benefit">→ Más conversiones, más ventas</div>
+                </div>
+                <div class="service__card">
+                    <div class="service__icon">⚙️</div>
+                    <h3 class="service__title">Desarrollo Optimizado</h3>
+                    <p class="service__description">
+                        Tecnología de punta que carga rápido, funciona perfecto en móviles y está optimizada para Google.
+                    </p>
+                    <div class="service__benefit">→ Mejor posicionamiento en Google</div>
+                </div>
+                <div class="service__card">
+                    <div class="service__icon">🚀</div>
+                    <h3 class="service__title">Lanzamiento Exitoso</h3>
+                    <p class="service__description">
+                        Tu web sale al aire lista para vender. Incluye capacitación para que puedas gestionar tu nuevo canal de ventas.
+                    </p>
+                    <div class="service__benefit">→ Empiezas a vender inmediatamente</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plans Section -->
+    <section class="plans" id="planes">
+        <div class="container">
+            <h2 class="section__title">Elige Tu Plan de Crecimiento</h2>
+            <p class="section__subtitle">Inversión inteligente que se paga sola con más clientes</p>
+            <div class="plans__grid">
+                <div class="plan__card">
+                    <div class="plan__header">
+                        <h3 class="plan__title">Landing Page</h3>
+                        <div class="plan__price">S/. 999</div>
+                        <div class="plan__period">Pago único</div>
                     </div>
+                    <div class="plan__features">
+                        <div class="feature">✅ Diseño que convierte</div>
+                        <div class="feature">✅ Optimizado para móviles</div>
+                        <div class="feature">✅ Formulario de contacto</div>
+                        <div class="feature">✅ SEO básico incluido</div>
+                        <div class="feature">✅ Listo en 10 días</div>
+                    </div>
+                    <div class="plan__cta">
+                        <a href="#contacto" class="btn btn--outline">Empezar Ahora</a>
+                    </div>
+                </div>
+                <div class="plan__card plan__card--featured">
+                    <div class="plan__badge">Más Popular</div>
+                    <div class="plan__header">
+                        <h3 class="plan__title">Web Completa</h3>
+                        <div class="plan__price">S/. 2,699</div>
+                        <div class="plan__period">Pago único</div>
+                    </div>
+                    <div class="plan__features">
+                        <div class="feature">✅ 5-7 páginas profesionales</div>
+                        <div class="feature">✅ Panel de administración</div>
+                        <div class="feature">✅ Blog integrado</div>
+                        <div class="feature">✅ SEO avanzado</div>
+                        <div class="feature">✅ Listo en 14 días</div>
+                    </div>
+                    <div class="plan__cta">
+                        <a href="#contacto" class="btn btn--primary">¡Lo Quiero!</a>
+                    </div>
+                </div>
+                <div class="plan__card">
+                    <div class="plan__header">
+                        <h3 class="plan__title">Desarrollo Personalizado</h3>
+                        <div class="plan__price">Desde S/. 9,000</div>
+                        <div class="plan__period">Según proyecto</div>
+                    </div>
+                    <div class="plan__features">
+                        <div class="feature">✅ E-commerce completo</div>
+                        <div class="feature">✅ Web apps avanzadas</div>
+                        <div class="feature">✅ Integraciones especiales</div>
+                        <div class="feature">✅ Soporte dedicado</div>
+                        <div class="feature">✅ Escalable y seguro</div>
+                    </div>
+                    <div class="plan__cta">
+                        <a href="#contacto" class="btn btn--outline">Cotizar Proyecto</a>
+                    </div>
+                </div>
+            </div>
+            <div class="plans__guarantee">
+                <p>🛡️ <strong>Garantía de 30 días</strong> - Si no estás satisfecho, te devolvemos tu dinero</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof Section -->
+    <section class="social-proof" id="testimonios">
+        <div class="container">
+            <h2 class="section__title">Nuestros Clientes Ya Están Vendiendo Más</h2>
+            <div class="testimonials__grid">
+                <div class="testimonial__card">
+                    <div class="testimonial__content">
+                        "En 2 meses recuperé la inversión. Ahora recibo 15 consultas semanales por mi web."
+                    </div>
+                    <div class="testimonial__author">
+                        <strong>María González</strong> - Consultora Legal
+                    </div>
+                </div>
+                <div class="testimonial__card">
+                    <div class="testimonial__content">
+                        "Mi restaurante aumentó 40% las reservas online. La web se paga sola."
+                    </div>
+                    <div class="testimonial__author">
+                        <strong>Carlos Mendoza</strong> - Restaurante El Sabor
+                    </div>
+                </div>
+                <div class="testimonial__card">
+                    <div class="testimonial__content">
+                        "Profesionales, rápidos y efectivos. Mi negocio creció 200% en 6 meses."
+                    </div>
+                    <div class="testimonial__author">
+                        <strong>Ana Ruiz</strong> - Tienda de Ropa Online
+                    </div>
+                </div>
+            </div>
+            <div class="stats__row">
+                <div class="stat">
+                    <h3 class="stat__number">100+</h3>
+                    <p class="stat__label">Proyectos Exitosos</p>
+                </div>
+                <div class="stat">
+                    <h3 class="stat__number">98%</h3>
+                    <p class="stat__label">Clientes Satisfechos</p>
+                </div>
+                <div class="stat">
+                    <h3 class="stat__number">5+</h3>
+                    <p class="stat__label">Años de Experiencia</p>
                 </div>
             </div>
         </div>
@@ -153,23 +299,87 @@
     <!-- Contact Section -->
     <section class="contact" id="contacto">
         <div class="container">
-            <h2 class="section__title">Contacto</h2>
-            <p class="section__subtitle">¿Tienes un proyecto en mente? ¡Hablemos!</p>
-            <form class="contact__form" id="contact-form">
-                <div class="form__group">
-                    <label for="name" class="form__label">Nombre</label>
-                    <input type="text" id="name" name="name" class="form__input" required>
+            <div class="contact__header">
+                <h2 class="section__title">¡Empecemos Tu Proyecto Hoy!</h2>
+                <p class="section__subtitle">
+                    Cada día que esperas es dinero que pierdes.<br>
+                    <strong>Contáctanos ahora y en 10 días estarás vendiendo más.</strong>
+                </p>
+            </div>
+            <div class="contact__content">
+                <div class="contact__info">
+                    <h3>¿Por qué elegir UWEB?</h3>
+                    <div class="contact__benefits">
+                        <div class="contact__benefit">
+                            <span class="benefit__icon">⚡</span>
+                            <div>
+                                <strong>Entrega Rápida</strong>
+                                <p>Tu web lista en 10-14 días máximo</p>
+                            </div>
+                        </div>
+                        <div class="contact__benefit">
+                            <span class="benefit__icon">💰</span>
+                            <div>
+                                <strong>ROI Garantizado</strong>
+                                <p>Con 1 cliente nuevo al mes ya recuperaste la inversión</p>
+                            </div>
+                        </div>
+                        <div class="contact__benefit">
+                            <span class="benefit__icon">🛡️</span>
+                            <div>
+                                <strong>Sin Riesgos</strong>
+                                <p>30 días de garantía o te devolvemos tu dinero</p>
+                            </div>
+                        </div>
+                        <div class="contact__benefit">
+                            <span class="benefit__icon">📱</span>
+                            <div>
+                                <strong>Soporte Completo</strong>
+                                <p>Te capacitamos y acompañamos en el proceso</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="form__group">
-                    <label for="email" class="form__label">Email</label>
-                    <input type="email" id="email" name="email" class="form__input" required>
-                </div>
-                <div class="form__group">
-                    <label for="message" class="form__label">Mensaje</label>
-                    <textarea id="message" name="message" class="form__textarea" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="btn btn--primary btn--full">Enviar Mensaje</button>
-            </form>
+                <form class="contact__form" id="contact-form">
+                    <div class="form__header">
+                        <h3>Solicita tu cotización gratuita</h3>
+                        <p>Respuesta en menos de 2 horas</p>
+                    </div>
+                    <div class="form__group">
+                        <label for="name" class="form__label">Nombre completo</label>
+                        <input type="text" id="name" name="name" class="form__input" required>
+                    </div>
+                    <div class="form__group">
+                        <label for="email" class="form__label">Email</label>
+                        <input type="email" id="email" name="email" class="form__input" required>
+                    </div>
+                    <div class="form__group">
+                        <label for="phone" class="form__label">Teléfono (opcional)</label>
+                        <input type="tel" id="phone" name="phone" class="form__input">
+                    </div>
+                    <div class="form__group">
+                        <label for="project-type" class="form__label">Tipo de proyecto</label>
+                        <select id="project-type" name="project-type" class="form__select" required>
+                            <option value="">Selecciona una opción</option>
+                            <option value="landing">Landing Page (S/. 999)</option>
+                            <option value="multipage">Web Completa (S/. 2,699)</option>
+                            <option value="custom">Desarrollo Personalizado</option>
+                            <option value="consultation">Solo consulta</option>
+                        </select>
+                    </div>
+                    <div class="form__group">
+                        <label for="message" class="form__label">Cuéntanos sobre tu proyecto</label>
+                        <textarea id="message" name="message" class="form__textarea" rows="3" 
+                                  placeholder="Describe tu negocio, objetivos y qué esperas lograr con tu web..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--full btn--cta">
+                        🚀 ¡Quiero Mi Cotización Gratis!
+                    </button>
+                    <div class="form__footer">
+                        <small>✅ Sin compromiso • ✅ Respuesta rápida • ✅ Cotización detallada</small>
+                    </div>
+                </form>
+            </div>
         </div>
     </section>
 
@@ -186,18 +396,27 @@
                 <div class="footer__section">
                     <h4 class="footer__subtitle">Enlaces</h4>
                     <ul class="footer__links">
-                        <li><a href="#inicio">Inicio</a></li>
-                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="portafolio.html">Portafolio</a></li>
                         <li><a href="precios.html">Precios</a></li>
-                        <li><a href="#nosotros">Nosotros</a></li>
-                        <li><a href="#contacto">Contacto</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer__section">
+                    <h4 class="footer__subtitle">Políticas</h4>
+                    <ul class="footer__links">
+                        <li><a href="politicas/privacidad.html">Política de Privacidad</a></li>
+                        <li><a href="politicas/terminos.html">Términos de Servicio</a></li>
+                        <li><a href="politicas/devoluciones.html">Política de Devoluciones</a></li>
                     </ul>
                 </div>
                 <div class="footer__section">
                     <h4 class="footer__subtitle">Contacto</h4>
                     <ul class="footer__contact">
                         <li>📧 info@uweb.com</li>
-                        <li>📱 +34 123 456 789</li>
+                        <li>📱 +51 987 654 321</li>
+                        <li>📍 Barranca, Lima, Perú</li>
                     </ul>
                 </div>
             </div>
@@ -206,6 +425,120 @@
             </div>
         </div>
     </footer>
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "UWEB",
+        "alternateName": "UWEB - Desarrollo Web Profesional",
+        "url": "https://uweb.com",
+        "logo": "https://uweb.com/assets/images/logo.png",
+        "description": "Empresa de desarrollo web profesional especializada en sitios web modernos, aplicaciones web y e-commerce en Perú.",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Barranca",
+            "addressLocality": "Lima",
+            "addressRegion": "Lima",
+            "postalCode": "15169",
+            "addressCountry": "PE"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+51-987-654-321",
+            "contactType": "customer service",
+            "email": "info@uweb.com",
+            "availableLanguage": ["Spanish", "English"]
+        },
+        "sameAs": [
+            "https://www.facebook.com/uweb.dev",
+            "https://www.linkedin.com/company/uweb-dev",
+            "https://github.com/uweb-dev"
+        ],
+        "foundingDate": "2019",
+        "numberOfEmployees": "5-10",
+        "areaServed": {
+            "@type": "Country",
+            "name": "Peru"
+        },
+        "serviceType": [
+            "Web Development",
+            "Web Design",
+            "E-commerce Development",
+            "SEO Services",
+            "Web Maintenance"
+        ],
+        "priceRange": "$500-$10000"
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "UWEB - Desarrollo Web Profesional",
+        "url": "https://uweb.com",
+        "description": "Sitio web oficial de UWEB, empresa de desarrollo web profesional en Perú.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "UWEB"
+        },
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://uweb.com/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        },
+        "inLanguage": "es-PE"
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Desarrollo Web Profesional",
+        "description": "Servicios completos de desarrollo web incluyendo diseño, programación, SEO y mantenimiento de sitios web.",
+        "provider": {
+            "@type": "Organization",
+            "name": "UWEB"
+        },
+        "areaServed": {
+            "@type": "Country",
+            "name": "Peru"
+        },
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Servicios de Desarrollo Web",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Landing Page / OnePage",
+                        "description": "Desarrollo de páginas web de una sola página optimizadas para conversión"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Sitio Web Multipage",
+                        "description": "Desarrollo de sitios web corporativos con múltiples páginas y CMS"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "E-commerce",
+                        "description": "Desarrollo de tiendas online completas con carrito de compras y pasarela de pagos"
+                    }
+                }
+            ]
+        }
+    }
+    </script>
 
     <script src="script.js"></script>
 </body>

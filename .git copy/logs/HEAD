@@ -1,0 +1,16 @@
+0000000000000000000000000000000000000000 41b5a5b92a3501afe7031c8851671e3818cf3b3b chambaDigital <yerctech@gmail.com> 1762284400 -0500	commit (initial): Initial commit: Sitio web UWEB con sistema de precios dinÃ¡mico
+41b5a5b92a3501afe7031c8851671e3818cf3b3b 0000000000000000000000000000000000000000 chambaDigital <yerctech@gmail.com> 1762284412 -0500	Branch: renamed refs/heads/master to refs/heads/main
+0000000000000000000000000000000000000000 41b5a5b92a3501afe7031c8851671e3818cf3b3b chambaDigital <yerctech@gmail.com> 1762284412 -0500	Branch: renamed refs/heads/master to refs/heads/main
+41b5a5b92a3501afe7031c8851671e3818cf3b3b 26f6bd3ea30459d405a72f86bc92a4bd4fefda09 chambaDigital <yerctech@gmail.com> 1762449369 -0500	checkout: moving from main to psurfschool
+26f6bd3ea30459d405a72f86bc92a4bd4fefda09 b699984c1da3d1473d6eab4028372a733373024d chambaDigital <yerctech@gmail.com> 1762449872 -0500	checkout: moving from psurfschool to reservaciondirecta
+b699984c1da3d1473d6eab4028372a733373024d 26f6bd3ea30459d405a72f86bc92a4bd4fefda09 chambaDigital <yerctech@gmail.com> 1762449886 -0500	checkout: moving from reservaciondirecta to heads/psurfschool
+26f6bd3ea30459d405a72f86bc92a4bd4fefda09 26f6bd3ea30459d405a72f86bc92a4bd4fefda09 chambaDigital <yerctech@gmail.com> 1762449927 -0500	checkout: moving from 26f6bd3ea30459d405a72f86bc92a4bd4fefda09 to psurfschool
+26f6bd3ea30459d405a72f86bc92a4bd4fefda09 a9d95ad6fc78170070e1548b04000fcb7b828cd5 chambaDigital <yerctech@gmail.com> 1762450261 -0500	commit (merge): Merge remote-tracking branch 'psurfschool/main' into psurfschool
+a9d95ad6fc78170070e1548b04000fcb7b828cd5 b699984c1da3d1473d6eab4028372a733373024d chambaDigital <yerctech@gmail.com> 1762450332 -0500	checkout: moving from psurfschool to reservaciondirecta
+b699984c1da3d1473d6eab4028372a733373024d a9d95ad6fc78170070e1548b04000fcb7b828cd5 chambaDigital <yerctech@gmail.com> 1762450340 -0500	checkout: moving from reservaciondirecta to psurfschool
+a9d95ad6fc78170070e1548b04000fcb7b828cd5 a9d95ad6fc78170070e1548b04000fcb7b828cd5 chambaDigital <yerctech@gmail.com> 1762450475 -0500	checkout: moving from psurfschool to psurfschool
+a9d95ad6fc78170070e1548b04000fcb7b828cd5 0122320026671cc28bb2c7704d98aea99cb58a71 chambaDigital <yerctech@gmail.com> 1762451075 -0500	commit: Refactor contact form and enhance styles
+0122320026671cc28bb2c7704d98aea99cb58a71 41b5a5b92a3501afe7031c8851671e3818cf3b3b chambaDigital <yerctech@gmail.com> 1762451101 -0500	checkout: moving from psurfschool to main
+41b5a5b92a3501afe7031c8851671e3818cf3b3b 0122320026671cc28bb2c7704d98aea99cb58a71 chambaDigital <yerctech@gmail.com> 1762451152 -0500	checkout: moving from main to psurfschool
+0122320026671cc28bb2c7704d98aea99cb58a71 41b5a5b92a3501afe7031c8851671e3818cf3b3b chambaDigital <yerctech@gmail.com> 1762451167 -0500	checkout: moving from psurfschool to main
+41b5a5b92a3501afe7031c8851671e3818cf3b3b 0122320026671cc28bb2c7704d98aea99cb58a71 chambaDigital <yerctech@gmail.com> 1762451183 -0500	checkout: moving from main to psurfschool
